@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta Tags here -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- end of Meta Tags here -->
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- End of Bootstrap -->
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <!-- End of Google Font -->
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./index.css">
+  <!-- End of CSS Link -->
+
+  <title>Captstone1</title>
+</head>
+<body>
+
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark" id="navBar">
+    <div class="container-fluid">
+      <!-- toggler for mobile view; if you prefer never to hide links, change the expand class above to "navbar-expand" -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active text-white" aria-current="page" href="#landing" id="#landing">Home</a>
+          <a class="nav-link text-white" href="#projects" id="#projects">My Projects</a>
+          <a class="nav-link text-white" href="#tools" id="#tools">Tools</a>
+          <a class="nav-link text-white" href="#contact" id="#contact">Contacts</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of NavBar -->
+
+  <!-- landing -->
+  <!-- About Section -->
+  <!-- ensure content sits below fixed navbar and any expanded menu -->
+  <section id="landing" class="container-fluid py-3 gap-5 mt-5 text-light px-0" style="scroll-margin-top:100px;">
+    <div id="about-row" class="row mt-5">
+      <div id="about-col-1" class="col-lg-6 d-flex flex-column justify-content-center">
+        <h1>Hi! I am Arjay</h1>
+        <h2>I'm an aspiring Full Stack Web Developer</h2>
+        <p>A visionary Product Designer and Systems Architect with a specialized focus on monochromatic UX/UI ecosystems. Known for transforming complex logistics—from international airline booking systems to end-to-end data science capstones—into seamless, single-hue digital experiences.</p>
+        <div class="mt-3">
+          <a href="#contacts" class="btn btn-hire">Hire Me</a>
+        </div>
+      </div>
+      <div id="about-col-2" class="col-lg-6 d-flex justify-content-center align-items-center">
+        <img src="./images/profile-picture.png" class="img-fluid rounded-circle" height="350" width="350">
+      </div>
+    </div>
+  </section>
+  <!-- end of landing -->
+
+  <!-- My Project -->
+  <div class="container my-5" id="projects">
+    <h2 class="text-center mb-4">Projects Section</h2>
+    
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-1.png" class="card-img-top p-3" alt="E-commerce App">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">E-commerce API Documentation</h5>
+            <p class="card-text text-muted small">
+              MERN E-Commerce Platform. The paltform features dynamic prodduct catalog with filtering and srting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-2.png" class="card-img-top p-3" alt="Airline Mockup">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Course Booking API Documentation</h5>
+            <p class="card-text text-muted small">
+              Side Project Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation, focusing on user experience and workflow efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-3.png" class="card-img-top p-3" alt="Airline Prototype">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Course Booking App</h5>
+            <p class="card-text text-muted small">
+              Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search, reservation, payment processing, and real-time ticket managment.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-4.png" class="card-img-top p-3" alt="E-commerce App">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">E-commerce App</h5>
+            <p class="card-text text-muted small">
+              MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-5.png" class="card-img-top p-3" alt="Airline Mockup">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Airline Booking System Mockup</h5>
+            <p class="card-text text-muted small">
+              Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-6.png" class="card-img-top p-3" alt="Airline Prototype">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Airline Booking System Prototype</h5>
+            <p class="card-text text-muted small">
+              Side Project: Interactive prototype simulating end-to-end airline booking functionalities...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-4.png" class="card-img-top p-3" alt="E-commerce App">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Short Courses Capstone</h5>
+            <p class="card-text text-muted small">
+              Placeholder for your Short courses capstone projet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-5.png" class="card-img-top p-3" alt="Airline Mockup">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Short Courses Capstone</h5>
+            <p class="card-text text-muted small">
+              Placeholder for your Short courses capstone projet.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0 rounded-4">
+          <img src="./images/img-project-6.png" class="card-img-top p-3" alt="Airline Prototype">
+          <div class="card-body">
+            <h5 class="card-title fw-bold text-primary">Short Courses Capstone</h5>
+            <p class="card-text text-muted small">
+              Placeholder for your Short courses capstone projet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- end of My Project -->
+
+  <!-- Tools -->
+  <div class="container mt-5 text-center py-5" id="tools">
+    <h2 class="mb-4">Tools</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-5">
+        <h3 class="h5">Front End</h3>
+        <div class="row g-3 justify-content-center mt-2">
+          <div class="col-5"><img src="./images/tools-html5.png" class="img-fluid" width="100" alt="HTML"></div>
+          <div class="col-5"><img src="./images/tools-css3.png" class="img-fluid" width="100" alt="CSS"></div>
+          <div class="col-5"><img src="./images/tools-bootstrap.png" class="img-fluid" width="100" alt="Bootstrap"></div>
+          <div class="col-5"><img src="./images/tools-javascript.png" class="img-fluid" width="100" alt="JS"></div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5">
+        <h3 class="h5">MERN</h3>
+        <div class="row g-3 justify-content-center mt-2">
+          <div class="col-5"><img src="./images/tools-mongodb.png" class="img-fluid" width="100" alt="MongoDB"></div>
+          <div class="col-5"><img src="./images/tools-express.png" class="img-fluid" width="100" alt="Express"></div>
+          <div class="col-5"><img src="./images/tools-react.png" class="img-fluid" width="100" alt="React"></div>
+          <div class="col-5"><img src="./images/tools-node.png" class="img-fluid" width="100" alt="Node"></div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-5">
+        <h3 class="h5">Other Tools</h3>
+        <div class="row g-3 justify-content-center mt-2">
+          <div class="col-5"><img src="./images/tools-heroku.png" class="img-fluid" width="100" alt="Heroku"></div>
+          <div class="col-5"><img src="./images/tools-git.png" class="img-fluid" width="100" alt="Git"></div>
+          <div class="col-5"><img src="./images/tools-postman.png" class="img-fluid" width="100" alt="Postman"></div>
+          <div class="col-5"><img src="./images/tools-sublime.png" class="img-fluid" width="100" alt="Sublime"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End of Tools -->
+
+  <!-- Contact Section -->
+ 
+  <section class="container-fluid pt-5" id="contact">
+    <div class="row">
+		 <h2 class="contact-title text-center">CONTACT US</h2>
+      <div class="col-md-12 d-flex align-items-center justify-content-center contact-form-bg" id="contacts">
+        <div class="form-container p-5">
+          <form class="bg-dark h-100 p-4 rounded-4 shadow-sm" aria-setsize="20"> 
+            <div class="mb-3">
+              <input type="text" class="form-control custom-input" id="name" placeholder="First Name M.I. Last Name">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control custom-input" id="email" placeholder="Email">
+            </div>
+            <div class="mb-4">
+              <textarea class="form-control custom-input h-100" id="message" rows="5" placeholder="Message" maxlength="250"></textarea>
+            </div>
+            <div class="text-end">
+              <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="bg-warning">
+    <div class="container text-center">
+      <p class="mb-0 footer-text">2023 | All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- end of Contact Section -->
+
+  <!-- Scroll-to-Top Button -->
+  <button id="scrollToTopBtn" class="scroll-to-top">
+    <span class="scroll-icon">↑</span>
+  </button>
+
+  <!-- JS Bundle here -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- end of JS Bundle here -->
+
+  <!-- JS Code for Scroll-to-Top Button -->
+  <script>
+    const scrollBtn = document.getElementById('scrollToTopBtn');
+
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    });
+
+    // Smooth scroll to top on button click
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+</body>
+</html>

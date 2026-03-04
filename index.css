@@ -1,0 +1,145 @@
+:root {
+    /* custom color palette */
+    --color-yellow: #f6ee2a;
+    --color-dark: #3b3b00;
+    --color-teal: #006e5f;
+    --color-light: #f2fedc;
+}
+
+#navBar {
+    font-weight: bold !important;
+    background-color: var(--color-dark) !important;
+    border-radius: 50px;              /* pill shape */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    z-index: 1050;                    /* float above other content */
+    padding: .25rem 1rem;
+    display: inline-block;            /* shrink to content width */
+    left: 50%;                        /* center horizontally */
+    transform: translateX(-50%);
+    top: 15px;                        /* add spacing from top edge */
+}
+
+/* ensure parent width doesn’t force full span */
+.navbar {
+    width: auto;
+}
+
+#navBar .navbar-nav .nav-link {
+    padding: .5rem 1rem;
+    color: var(--color-yellow) !important;
+    border-radius: 50px;
+    margin: 0 .25rem;
+    transition: background-color .3s, color .3s;
+}
+
+#navBar .navbar-nav .nav-link:hover,
+#navBar .navbar-nav .nav-link.active {
+    background-color: var(--color-teal);
+    color: var(--color-light) !important;
+}
+
+#contacts {
+    background-color: var(--color-light) !important;
+}
+
+#landing {
+    scroll-margin-top:100px;
+    /* ensure the section is fully covered by the background */
+    background-image: url('./images/img-background-landing.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;                         /* fill viewport height */
+    background-color: rgba(246, 238, 42, 0.5); /* yellow overlay (#f6ee2a) with 50% opacity */
+    background-blend-mode: lighten;
+    padding: 2rem;
+}
+
+/* adjust dimensions of the contact form fields */
+.custom-input {
+    width: 100%;          /* full width of parent */
+    max-width: 400px;     /* optional cap */
+    padding: .75rem 1rem;
+    font-size: 1rem;
+}
+
+/* if you want taller textarea */
+.custom-input[type="text"],
+.custom-input[type="email"],
+.custom-input {
+    height: 2rem;
+}
+
+/* submit button styling */
+.btn-submit {
+    background-color: var(--color-teal);      /* make button clearly visible */
+    color: #ffffff;
+    border: none;
+    padding: .5rem 1.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+    background-color: #006e61;      /* desired hover color */
+    color: #ffffff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem; /* space between form fields */
+    border-radius: 15px;
+}
+
+/* Scroll-to-Top Button Styling */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-teal);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;              /* always flex for proper centering */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease, bottom 0.3s ease;
+    z-index: 999;
+    opacity: 0;                 /* hidden by default */
+    pointer-events: none;       /* not clickable when hidden */
+}
+
+.scroll-to-top:hover {
+    background-color: #005050;
+    bottom: 40px;               /* slight lift on hover */
+}
+
+.scroll-to-top.show {
+    opacity: 1;                 /* visible when scrolled */
+    pointer-events: auto;       /* clickable when shown */
+}
+
+/* hire me button style */
+.btn-hire {
+    background-color: var(--color-yellow);
+    color: var(--color-dark);
+    font-weight: bold;
+    padding: .5rem 1.25rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color .3s, transform .2s;
+}
+
+.btn-hire:hover {
+    background-color: var(--color-light);
+    transform: translateY(-2px);
+}
+
