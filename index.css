@@ -44,6 +44,7 @@ h1, h2, h3, .nav-link {
     background: radial-gradient(circle at center, #1a1a1a 0%, #0f0f0f 100%);
     text-align: center;
     padding-top: 80px; /* Accounts for the fixed navbar height */
+    scroll-margin-top:100px;
 }
 
 #landing h1 {
@@ -59,11 +60,16 @@ h1, h2, h3, .nav-link {
     margin-bottom: 2rem;
 }
 
+#landing p {
+    max-width: 800px;
+}
+
 #landing .img-fluid {
     /* Ensures the profile picture stays centered and has a nice "glow" */
     border: 2px solid var(--accent);
     padding: 10px;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+    max-width: 350px;
 }
 
 .btn-hire {
@@ -132,6 +138,7 @@ h1, h2, h3, .nav-link {
     height: 100%;
     background: var(--accent);
     border-radius: 2px;
+    width: 85%;
 }
 
 .scroll-to-top {
@@ -222,6 +229,10 @@ h1, h2, h3, .nav-link {
     background-color: transparent;
     box-shadow: none;
     border-bottom-color: var(--accent);
+}
+
+textarea {
+    height: 150px !important;
 }
 
 .modern-form label {
