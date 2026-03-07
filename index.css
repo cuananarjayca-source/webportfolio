@@ -145,34 +145,6 @@ h1, h2, h3, .nav-link {
   width: 85%;
 }
 
-/* =========================
-   SCROLL TO TOP BUTTON
-========================= */
-.scroll-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 50px;
-  height: 50px;
-  background: #ffffff;
-  color: #000;
-  border: none;
-  border-radius: 50%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1000;
-  transition: all 0.3s ease;
-}
-
-.scroll-to-top.show {
-  display: flex;
-}
-
-.scroll-to-top:hover {
-  transform: rotate(360deg);
-}
 
 /* =========================
    CONTACT
