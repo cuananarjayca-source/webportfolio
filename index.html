@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <!-- Meta Tags here -->
   <meta charset="utf-8">
@@ -9,6 +9,10 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- End of Bootstrap -->
+
+  <!-- Bootstrap Icons (INSTEAD of Font Awesome) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- End of Bootstrap Icons -->
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +24,29 @@
   <link rel="stylesheet" href="./index.css">
   <!-- End of CSS Link -->
 
-  <!-- Font Awesome Icons -->
-  <!-- Try the latest stable version: -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- End of Font Awesome -->
-
   <title>Capstone1</title>
 </head>
 <body>
 
   <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navBar">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link text-white" href="#landing">Home</a>
+          <a class="nav-link text-white" href="#projects">My Projects</a>
+          <a class="nav-link text-white" href="#tools">Tools</a>
+          <a class="nav-link text-white" href="#contact">Contacts</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end of NavBar -->
+
+  <!-- Landing Section -->
   <section id="landing" class="container-fluid py-5 text-light px-0">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 col-xl-8 text-center">
@@ -47,41 +64,20 @@
       </div>
     </div>
   </section>
-  <!-- end of NavBar -->
-
-  <!-- landing -->
-
-  <!-- About Section -->
-
-<!-- landing section -->
-<section id="landing" class="container-fluid py-5 text-light px-0">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-10 col-xl-8 text-center">
-      <h1>Hi! I am Arjay</h1>
-      <h2>I'm an aspiring Full Stack Web Developer</h2>
-      <p class="mx-auto">
-        A visionary Product Designer and Systems Architect with a specialized focus on monochromatic UX/UI ecosystems. Known for transforming complex logistics—from international airline booking systems to end-to-end data science capstones—into seamless, single-hue digital experiences.
-      </p>
-      <div class="mt-4 mb-4">
-        <a href="#contact" class="btn btn-hire">Hire Me</a>
-      </div>
-      <div class="img-container">
-        <img src="images/profile.png" class="img-fluid rounded-circle" alt="Profile Picture">
-      </div>
-    </div> </div> </section>
   <!-- end of landing -->
 
   <!-- My Project -->
-  <div class="container-fluid" id="projects">
+  <section class="container-fluid" id="projects">
     <h2 class="text-center mb-4">Projects Section</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
+      
       <div class="col">
         <div class="card h-100 shadow-sm border-0 rounded-4">
           <img src="images/project1.png" class="card-img-top p-3" alt="E-commerce App">
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">E-commerce API Documentation</h5>
             <p class="card-text text-muted small">
-              MERN E-Commerce Platform. The platform features dynamic prodduct catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities
+              MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search, seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.
             </p>
           </div>
         </div>
@@ -117,7 +113,7 @@
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">E-commerce App</h5>
             <p class="card-text text-muted small">
-              MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting...
+              MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting.
             </p>
           </div>
         </div>
@@ -129,7 +125,7 @@
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">Airline Booking System Mockup</h5>
             <p class="card-text text-muted small">
-              Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection...
+              Side Project: Conceptual design showcasing an intuitive UI for flight search and seat selection.
             </p>
           </div>
         </div>
@@ -141,7 +137,7 @@
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">Airline Booking System Prototype</h5>
             <p class="card-text text-muted small">
-              Side Project: Interactive prototype simulating end-to-end airline booking functionalities...
+              Side Project: Interactive prototype simulating end-to-end airline booking functionalities.
             </p>
           </div>
         </div>
@@ -149,7 +145,7 @@
 
       <div class="col">
         <div class="card h-100 shadow-sm border-0 rounded-4">
-          <img src="images/project7.png" class="card-img-top p-3" alt="E-commerce App">
+          <img src="images/project7.png" class="card-img-top p-3" alt="Capstone Project">
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">Short Courses Capstone</h5>
             <p class="card-text text-muted small">
@@ -161,7 +157,7 @@
 
       <div class="col">
         <div class="card h-100 shadow-sm border-0 rounded-4">
-          <img src="images/project8.png" class="card-img-top p-3" alt="Airline Mockup">
+          <img src="images/project8.png" class="card-img-top p-3" alt="Capstone Project">
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">Short Courses Capstone</h5>
             <p class="card-text text-muted small">
@@ -173,7 +169,7 @@
 
       <div class="col">
         <div class="card h-100 shadow-sm border-0 rounded-4">
-          <img src="images/project9.png" class="card-img-top p-3" alt="Airline Prototype">
+          <img src="images/project9.png" class="card-img-top p-3" alt="Capstone Project">
           <div class="card-body">
             <h5 class="card-title fw-bold text-primary">Short Courses Capstone</h5>
             <p class="card-text text-muted small">
@@ -182,305 +178,365 @@
           </div>
         </div>
       </div>
+
     </div>
-  </div>
-  
+  </section>
   <!-- end of My Project -->
 
+  <!-- Tools Section -->
+  <section class="container-fluid text-center mt-5" id="tools">
+    <h2 class="mb-2">My Tech Stack</h2>
+    <p class="mb-5">Technologies I work with</p>
 
-<!-- Tools Section -->
-<section class="container-fluid text-center mt-5" id="tools">
-  <h2 class="mb-2">My Tech Stack</h2>
-  <p class="mb-5">Technologies I work with</p>
+    <div class="row justify-content-center">
 
-  <div class="row justify-content-center">
-
-    <!-- Front End -->
-    <div class="col-lg-4 mb-5">
-      <div class="tools-category">
-        <h3 class="h5 mb-4">Front End</h3>
-        <div class="row g-3 justify-content-center">
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/html5.png" class="img-fluid tool-icon" alt="HTML">
-              <p class="tool-name mt-2 mb-0">HTML5</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+      <!-- Front End -->
+      <div class="col-lg-4 mb-5">
+        <div class="tools-category">
+          <h3 class="h5 mb-4">Front End</h3>
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/html5.png" class="img-fluid tool-icon" alt="HTML">
+                <p class="tool-name mt-2 mb-0">HTML5</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/css3.png" class="img-fluid tool-icon" alt="CSS">
-              <p class="tool-name mt-2 mb-0">CSS3</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/css3.png" class="img-fluid tool-icon" alt="CSS">
+                <p class="tool-name mt-2 mb-0">CSS3</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/bootstrap.png" class="img-fluid tool-icon" alt="Bootstrap">
-              <p class="tool-name mt-2 mb-0">Bootstrap</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/bootstrap.png" class="img-fluid tool-icon" alt="Bootstrap">
+                <p class="tool-name mt-2 mb-0">Bootstrap</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/javascript.png" class="img-fluid tool-icon" alt="JavaScript">
-              <p class="tool-name mt-2 mb-0">JavaScript</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/javascript.png" class="img-fluid tool-icon" alt="JavaScript">
+                <p class="tool-name mt-2 mb-0">JavaScript</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- MERN Stack -->
-    <div class="col-lg-4 mb-5">
-      <div class="tools-category">
-        <h3 class="h5 mb-4">MERN Stack</h3>
-        <div class="row g-3 justify-content-center">
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/mongodb.png" class="img-fluid tool-icon" alt="MongoDB">
-              <p class="tool-name mt-2 mb-0">MongoDB</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+      <!-- MERN Stack -->
+      <div class="col-lg-4 mb-5">
+        <div class="tools-category">
+          <h3 class="h5 mb-4">MERN Stack</h3>
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/mongodb.png" class="img-fluid tool-icon" alt="MongoDB">
+                <p class="tool-name mt-2 mb-0">MongoDB</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/express.png" class="img-fluid tool-icon" alt="Express">
-              <p class="tool-name mt-2 mb-0">Express</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/express.png" class="img-fluid tool-icon" alt="Express">
+                <p class="tool-name mt-2 mb-0">Express</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/react.png" class="img-fluid tool-icon" alt="React">
-              <p class="tool-name mt-2 mb-0">React</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/react.png" class="img-fluid tool-icon" alt="React">
+                <p class="tool-name mt-2 mb-0">React</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/node.png" class="img-fluid tool-icon" alt="Node.js">
-              <p class="tool-name mt-2 mb-0">Node.js</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/node.png" class="img-fluid tool-icon" alt="Node.js">
+                <p class="tool-name mt-2 mb-0">Node.js</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Other Tools -->
-    <div class="col-lg-4 mb-5">
-      <div class="tools-category">
-        <h3 class="h5 mb-4">Other Tools</h3>
-        <div class="row g-3 justify-content-center">
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/heroku.png" class="img-fluid tool-icon" alt="Heroku">
-              <p class="tool-name mt-2 mb-0">Heroku</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+      <!-- Other Tools -->
+      <div class="col-lg-4 mb-5">
+        <div class="tools-category">
+          <h3 class="h5 mb-4">Other Tools</h3>
+          <div class="row g-3 justify-content-center">
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/heroku.png" class="img-fluid tool-icon" alt="Heroku">
+                <p class="tool-name mt-2 mb-0">Heroku</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/git.png" class="img-fluid tool-icon" alt="Git">
-              <p class="tool-name mt-2 mb-0">Git</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/git.png" class="img-fluid tool-icon" alt="Git">
+                <p class="tool-name mt-2 mb-0">Git</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/postman.png" class="img-fluid tool-icon" alt="Postman">
-              <p class="tool-name mt-2 mb-0">Postman</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/postman.png" class="img-fluid tool-icon" alt="Postman">
+                <p class="tool-name mt-2 mb-0">Postman</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col-6 col-sm-4">
-            <div class="tool-card">
-              <img src="images/sublime.png" class="img-fluid tool-icon" alt="Sublime">
-              <p class="tool-name mt-2 mb-0">Sublime</p>
-              <div class="skill-bar"><div class="skill-progress"></div></div>
+            <div class="col-6 col-sm-4">
+              <div class="tool-card">
+                <img src="images/sublime.png" class="img-fluid tool-icon" alt="Sublime">
+                <p class="tool-name mt-2 mb-0">Sublime</p>
+                <div class="skill-bar">
+                  <div class="skill-progress"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
+  </section>
+  <!-- End of Tools -->
 
-  </div>
-</section>
-<!-- End of Tools -->
+  <!-- Contact Section -->
+  <section class="container-fluid p-0" id="contact">
+    <div class="row g-0">
 
-<!-- Contact Section -->
-<section class="container-fluid p-0" id="contact">
-  <div class="row g-0">
+      <!-- Left Side - Contact Info -->
+      <div class="col-lg-6 contact-info-side">
+        <div class="contact-info-wrapper">
+          <h2 class="display-4 mb-4">Let's Work Together!</h2>
+          <p class="lead mb-5">Have a project in mind? Let's make it happen!</p>
 
-    <!-- Left Side - Contact Info -->
-    <div class="col-lg-6 contact-info-side">
-      <div class="contact-info-wrapper">
-        <h2 class="display-4 mb-4">Let's Work Together!</h2>
-        <p class="lead mb-5">Have a project in mind? Let's make it happen!</p>
+          <!-- Contact Details -->
+          <div class="contact-details">
 
-        <!-- Contact Details -->
-        <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <a href="mailto:arjay@example.com">arjay@example.com</a>
+              </div>
+            </div>
 
-          <div class="contact-item">
-            <div>
-              <h5>Email</h5>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <a href="tel:+1234567890">+123 456 7890</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt-fill"></i>
+              </div>
+              <div>
+                <h5>Location</h5>
+                <p>Manila, Philippines</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Side - Contact Form -->
+      <div class="col-lg-6 contact-form-side">
+        <div class="contact-form-wrapper">
+          <h3 class="mb-4 text-center">Send Me a Message</h3>
+
+          <form class="modern-form">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="Name" required>
+              <label for="name">Full Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+              <label for="email">Email Address</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="tel" class="form-control" id="phone" placeholder="Phone">
+              <label for="phone">Phone (Optional)</label>
+            </div>
+
+            <div class="form-floating mb-4">
+              <textarea class="form-control" id="message" placeholder="Message" style="height: 150px;" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-submit-modern w-100">
+              <span>Send Message</span>
+              <i class="bi bi-send-fill ms-2"></i>
+            </button>
+          </form>
+
+          <!-- Social Media -->
+          <div class="social-links-large mt-5">
+            <h5 class="mb-3">Follow Me</h5>
+
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.gitlab.com" target="_blank" rel="noopener noreferrer" class="social-btn">
+              <i class="bi bi-gitlab"></i>
+              <span>GitLab</span>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- End of Contact Section -->
+
+  <!-- Footer Section -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <!-- Brand Column -->
+        <div class="footer-column">
+          <h3 class="footer-brand">Arjay</h3>
+          <p class="footer-tagline">Full Stack Web Developer</p>
+          <p class="footer-description">
+            Creating seamless digital experiences with modern web technologies.
+          </p>
+
+          <!-- Social Media -->
+          <div class="footer-social mt-4">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://www.gitlab.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="bi bi-gitlab"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
+              <i class="bi bi-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#landing"><i class="bi bi-chevron-right"></i> Home</a></li>
+            <li><a href="#projects"><i class="bi bi-chevron-right"></i> Projects</a></li>
+            <li><a href="#tools"><i class="bi bi-chevron-right"></i> Tech Stack</a></li>
+            <li><a href="#contact"><i class="bi bi-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><i class="bi bi-code-slash"></i> Web Development</li>
+            <li><i class="bi bi-phone"></i> Responsive Design</li>
+            <li><i class="bi bi-server"></i> Backend Solutions</li>
+            <li><i class="bi bi-brush"></i> UI/UX Design</li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+          <h4 class="footer-title">Get In Touch</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="bi bi-envelope-fill"></i>
               <a href="mailto:arjay@example.com">arjay@example.com</a>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div>
-              <h5>Phone</h5>
+            </li>
+            <li>
+              <i class="bi bi-telephone-fill"></i>
               <a href="tel:+1234567890">+123 456 7890</a>
-            </div>
-          </div>
+            </li>
+            <li>
+              <i class="bi bi-geo-alt-fill"></i>
+              <span>Manila, Philippines</span>
+            </li>
+          </ul>
+        </div>
 
-          <div class="contact-item">
-            <div>
-              <h5>Location</h5>
-              <p>Manila, Philippines</p>
-            </div>
-          </div>
+      </div>
 
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p class="copyright">
+            &copy; <span id="currentYear">2025</span> Arjay. All Rights Reserved.
+          </p>
+          <p class="made-with">
+            Made with <i class="bi bi-heart-fill heart-beat"></i> and <i class="bi bi-cup-hot-fill"></i>
+          </p>
+
+          <div class="footer-bottom-links">
+            <a href="#privacy">Privacy Policy</a>
+            <span>|</span>
+            <a href="#terms">Terms of Service</a>
+          </div>
         </div>
       </div>
     </div>
+  </footer>
+  <!-- End of Footer -->
 
-    <!-- Right Side - Contact Form -->
-    <div class="col-lg-6 contact-form-side">
-      <div class="contact-form-wrapper">
-        <h3 class="mb-4 text-center">Send Me a Message</h3>
-
-        <form class="modern-form">
-          <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="name" placeholder="Name" required>
-            <label for="name">Full Name</label>
-          </div>
-
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" placeholder="Email" required>
-            <label for="email">Email Address</label>
-          </div>
-
-          <div class="form-floating mb-3">
-            <input type="tel" class="form-control" id="phone" placeholder="Phone">
-            <label for="phone">Phone (Optional)</label>
-          </div>
-
-          <div class="form-floating mb-4">
-            <textarea class="form-control" id="message" placeholder="Message" required></textarea>
-            <label for="message">Your Message</label>
-          </div>
-
-          <button type="submit" class="btn btn-submit-modern w-100">
-            Send Message
-          </button>
-        </form>
-      </div>
-
-      <!-- Social Media -->
-      <div class="social-links-large mt-5">
-        <h5 class="mb-3">Follow Me</h5>
-
-        <a href="https://linkedin.com" target="_blank" class="social-btn">
-          LinkedIn ↗
-        </a>
-
-        <a href="https://github.com" target="_blank" class="social-btn">
-          GitHub ↗
-        </a>
-
-        <a href="https://gitlab.com" target="_blank" class="social-btn">
-          GitLab ↗
-        </a>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-<!-- End of Contact Section -->
-
-<!-- Footer Section -->
-<footer id="footer">
-  <div class="container">
-    <div class="footer-content">
-
-      <!-- Brand Column -->
-      <div class="footer-column">
-        <h3 class="footer-brand">Arjay</h3>
-        <p class="footer-tagline">Full Stack Web Developer</p>
-        <p class="footer-description">
-          Creating seamless digital experiences with modern web technologies.
-        </p>
-
-        <!-- Social Media -->
-        <div class="footer-social mt-4 d-flex gap-2">
-          <p>LinkedIn ↗</p>
-          <p>GitHub ↗</p>
-          <p>GitLab ↗</p>
-          <p>Twitter ↗</p>
-        </div>
-      </div> 
-
-      <!-- Quick Links -->
-      <div class="footer-column">
-        <h4 class="footer-title">Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="#landing">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#tools">Tech Stack</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <!-- Services -->
-      <div class="footer-column">
-        <h4 class="footer-title">Services</h4>
-        <ul class="footer-links">
-          <li>Web Development</li>
-          <li>Responsive Design</li>
-          <li>Backend Solutions</li>
-          <li>UI/UX Design</li>
-        </ul>
-      </div>
-
-      <!-- Contact Info -->
-      <div class="footer-column">
-        <h4 class="footer-title">Get In Touch</h4>
-        <ul class="footer-contact">
-          <li><a href="mailto:arjay@example.com">Email: arjay@example.com</a></li>
-          <li><a href="tel:+1234567890">Phone: +123 456 7890</a></li>
-          <li><span>Location: Manila, Philippines</span></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-      <div class="footer-bottom-content">
-        <p class="copyright">
-          &copy; <span>2025</span> Arjay. All Rights Reserved.
-        </p>
-        <p class="made-with">
-          Made with ❤️ and ☕
-        </p>
-
-        <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <span>|</span>
-          <a href="#">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <!-- end of JS Bundle here -->
+
+  <!-- Update year -->
+  <script>
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
