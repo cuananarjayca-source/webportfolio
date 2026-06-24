@@ -33,11 +33,12 @@
     const notyf = new Notyf();
 
     const name = ref("");
+    const phone = ref("");
     const email = ref("");
     const message = ref("");
 
     const isLoading = ref(false);
-    const WEB3FORMS_ACCESS_KEY = "5191cd86-f004-4ddc-9702-3aec9234a49d";
+    const WEB3FORMS_ACCESS_KEY = "c1b6e2f5-890d-43da-ac37-271a096a038c";
 
     const subject = "New message from Portfolio Contact Form";
     const submitForm = async () => {
@@ -60,6 +61,7 @@
                     access_key: WEB3FORMS_ACCESS_KEY,
                     subject: subject,
                     name: name.value,
+                    phone: phone.value,
                     email: email.value,
                     message: message.value
                 })
@@ -81,7 +83,7 @@
 
     /*reCAPTCHA Integration*/
 
-    const SITE_KEY = '6LfFSQctAAAAAAp9vy_QK21xt4nvjDyd1Ov4EeRT';  // Replace with your site key
+    const SITE_KEY = '6LeEegctAAAAAPnNKcEbDtadBvIHaYkLg2pZddpM';  // Replace with your site key
     const recaptchaContainer = ref(null);
     const recaptchaWidgetId = ref(null);
     const recaptchaToken = ref('');
@@ -159,14 +161,14 @@
         <div class="contact-form-wrapper">
           <h3 class="mb-4 text-center">Send Me a Message</h3>
 
-          <form class="modern-form" @submit.prevent="handleSubmit">
+          <form class="modern-form" @submit.prevent="submitForm">
             <div class="form-floating mb-3">
               <input
                 type="text"
                 class="form-control"
                 id="name"
                 placeholder="Name"
-                v-model="form.name"
+                v-model="name"
                 required
               />
               <label for="name">Full Name</label>
@@ -178,7 +180,7 @@
                 class="form-control"
                 id="email"
                 placeholder="Email"
-                v-model="form.email"
+                v-model="email"
                 required
               />
               <label for="email">Email Address</label>
@@ -190,7 +192,7 @@
                 class="form-control"
                 id="phone"
                 placeholder="Phone"
-                v-model="form.phone"
+                v-model="phone"
               />
               <label for="phone">Phone (Optional)</label>
             </div>
@@ -200,7 +202,7 @@
                 class="form-control"
                 id="message"
                 placeholder="Message"
-                v-model="form.message"
+                v-model="message"
                 required
               ></textarea>
               <label for="message">Your Message</label>

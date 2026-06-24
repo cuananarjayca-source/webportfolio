@@ -1,10 +1,7 @@
 <script setup>
 const name = 'Arjay'
 const tagline = "I'm an aspiring Full Stack Web Developer"
-const bio = `A visionary Product Designer and Systems Architect with a specialized focus on
-monochromatic UX/UI ecosystems. Known for transforming complex logistics—from
-international airline booking systems to end-to-end data science capstones—into
-seamless, single-hue digital experiences.`
+const bio = `Junior Full-Stack Developer with a background in IT operations and technical support. Recently completed intensive web development training focused on JavaScript, Vue, Node.js, MongoDB, and REST APIs. Experienced in problem-solving, system analysis, and AI-assisted learning. Seeking to contribute to modern web application development while continuing to grow as a software engineer.`
 const profileImage = 'images/profile.png'
 </script>
 
