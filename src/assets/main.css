@@ -94,13 +94,12 @@ h1, h2, h3, .nav-link {
    LANDING
 ========================= */
 #landing {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: radial-gradient(circle at center, var(--surface) 0%, var(--bg) 100%);
   text-align: center;
-  padding: 80px 15px;
+  padding: 15px;
   scroll-margin-top: 100px;
 }
 
@@ -156,7 +155,6 @@ h1, h2, h3, .nav-link {
    PROJECTS
 ========================= */
 #projects {
-  padding: 60px 0;
   scroll-margin-top: 70px;
 }
 
@@ -226,7 +224,6 @@ h1, h2, h3, .nav-link {
 ========================= */
 #tools {
   scroll-margin-top: 70px;
-  padding: 60px 0;
 }
 
 .tools-category {

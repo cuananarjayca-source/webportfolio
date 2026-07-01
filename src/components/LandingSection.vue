@@ -6,7 +6,7 @@ const profileImage = 'images/profile.png'
 </script>
 
 <template>
-  <section id="landing" class="container-fluid py-5 text-light px-0">
+  <section id="landing" class="container-fluid text-light px-0">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10 col-xl-8 text-center">
         <h1>Hi! I am {{ name }}</h1>
