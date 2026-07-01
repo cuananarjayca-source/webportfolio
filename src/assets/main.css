@@ -77,7 +77,7 @@ h1, h2, h3, .nav-link {
 }
 
 .theme-toggle-btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-20px);
 }
 
 .nav-link {
@@ -164,7 +164,16 @@ h1, h2, h3, .nav-link {
   background-color: var(--surface);
   border: 1px solid var(--border);
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
+
+#projects .card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures it fills the card height */
+}
+
 
 #projects .card:hover {
   transform: translateY(-10px);
@@ -179,10 +188,37 @@ h1, h2, h3, .nav-link {
 #projects .card-img-top {
   filter: grayscale(100%);
   transition: all 0.3s ease;
+  height: 200px; 
 }
 
 #projects .card:hover .card-img-top {
   filter: grayscale(0%);
+}
+
+#projects .cta-view-work {
+  background-color: var(--button-bg);
+  color: var(--button-text) !important;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cta-view-work:hover {
+  background-color: transparent;
+  color: var(--button-bg) !important;
+  border: 1px solid var(--button-bg);
+  transform: translateY(-2px);
+}
+
+.cta-view-work i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.cta-view-work {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 /* =========================

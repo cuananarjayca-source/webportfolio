@@ -12,7 +12,7 @@ const props = defineProps({
       <p class="card-text">{{ props.project.description }}</p>
       <a
       :href="props.project.link"
-      class="btn btn-primary"
+      class="btn btn-primary cta-view-work"
       target="_blank"
       rel="noopener noreferrer"
       >View My Work

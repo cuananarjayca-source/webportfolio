@@ -10,8 +10,8 @@
     })
 
     const contactInfo = [
-      { label: 'Email', icon: 'bi bi-envelope-fill', href: 'mailto:arjay@example.com', value: 'arjay@example.com' },
-      { label: 'Phone', icon: 'bi bi-telephone-fill', href: 'tel:+1234567890', value: '+123 456 7890' },
+      { label: 'Email', icon: 'bi bi-envelope-fill', href: 'mailto:cuananarjay.ca@gmail.com', value: 'cuananarjay.ca@gmail.com' },
+      { label: 'Phone', icon: 'bi bi-telephone-fill', href: 'tel:+63 976 022 4418', value: '+63 976 022 4418' },
       { label: 'Location', icon: 'bi bi-geo-alt-fill', href: null, value: 'Manila, Philippines' }
     ]
 
